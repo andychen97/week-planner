@@ -121,3 +121,24 @@ textarea {
   border-radius: 5px;
   margin: 0 15px;
 }
+
+.tbl-descript {
+  width: 75%;
+}
+
+.tbl-time {
+  width: 25%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 10px 20px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 0.5rem;
+  text-align: left;
+}
