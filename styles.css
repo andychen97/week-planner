@@ -10,6 +10,10 @@ body {
   display: none;
 }
 
+.inline {
+  display: inline-block;
+}
+
 .container {
   background-color: beige;
   width: 1000px;
@@ -29,6 +33,10 @@ body {
   flex-basis: 100%;
 }
 
+.col-7 {
+  flex-basis: calc(100% / 7);
+}
+
 .align-center {
   text-align: center;
 }
@@ -37,12 +45,12 @@ body {
   text-align: right;
 }
 
-.margin-top-bottom-10px {
-  margin: 10px 0;
+.margin-bottom-10px {
+  margin: 0 0 10px;
 }
 
-.margin-top-bottom-100px {
-  margin: 150px 0;
+.margin-bottom-30px {
+  margin: 0 0 30px;
 }
 
 .add-button {
@@ -70,9 +78,9 @@ body {
 
 .modal-content {
   background-color: white;
-  width: 45%;
-  height: 40%;
-  margin: 15% auto;
+  width: 400px;
+  height: 310px;
+  margin: 10% auto;
   padding: 0 40px;
 }
 
@@ -95,9 +103,21 @@ textarea {
   width: 20px;
   height: 20px;
   margin-top: 15px;
+  cursor: pointer;
+}
+
+.exit-button:active {
+  transform: translateY(0.25rem);
 }
 
 .add-title {
   margin: 0 0 10px;
   padding: 0;
+}
+
+.day {
+  border: 1px solid #caf0f8;
+  background-color: #caf0f8;
+  border-radius: 5px;
+  margin: 0 15px;
 }
