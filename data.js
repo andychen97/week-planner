@@ -1,34 +1,15 @@
+/* exported data */
+
 var data = {
   view: 'sunday',
-  sunday: [{
-    time: null,
-    stuff: null
-  }],
-  monday: [{
-    time: null,
-    stuff: null
-  }],
-  tuesday: [{
-    time: null,
-    stuff: null
-  }],
-  wednesday: [{
-    time: null,
-    stuff: null
-  }],
-  thursday: [{
-    time: null,
-    stuff: null
-  }],
-  friday: [{
-    time: null,
-    stuff: null
-  }],
-  saturday: [{
-    time: null,
-    stuff: null
-  }],
+  sunday: [],
+  monday: [],
+  tuesday: [],
+  wednesday: [],
+  thursday: [],
+  friday: [],
+  saturday: [],
 
   editing: null,
-  nextEntryID: 1
+  nextEntryId: 1
 };

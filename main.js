@@ -1,9 +1,10 @@
+/* global data */
+
 var $entryButt = document.querySelector('.add-button');
 var $modal = document.querySelector('.modal');
 var $exitButt = document.querySelector('.exit-button');
 var $days = document.querySelectorAll('.day');
 var $tbl = document.querySelector('table');
-var $form = document.querySelector('form');
 
 function addEntry(event) {
   $modal.className = 'modal';
@@ -41,8 +42,19 @@ function renderTbl(event) {
 
 // function
 
-$form.addEventListener('submit', addEntry);
+var $form = document.querySelector('form');
+var $selectDay = document.querySelector('select[name="day"]');
+var $selectTime = document.querySelector('select[name="time"]');
+var $textArea = document.querySelector('textarea');
+$form.addEventListener('submit', selectEntry);
 
-function addEntry(event) {
-
+function selectEntry(event) {
+  event.preventDefault();
+  data[$selectDay.value].push({
+    time: $selectTime.value,
+    task: $textArea.value,
+    entryId: data.nextEntryId++
+  });
+  event.target.reset();
+  $modal.className = 'modal hidden';
 }
